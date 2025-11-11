@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeferson Login</title>
+    <link rel="stylesheet" href="login.css">
+    <title>RGM - Jornal Digital</title>
+    
 </head>
 <body>
     <div class="container">
 
-        <div id="login">
+        <div id="login" class="form active">
             <h2>Login</h2>
             <label for="login-email">E-Mail:</label>
             <input type="email" id="login-email" placeholder="Digite seu e-mail:">
@@ -19,12 +21,13 @@
             <div id="login-senha-erro" class="erro"></div>
 
             <button id="botao-login">Entrar</button>
-            <div class="switch">
-                Ainda não tem uma conta? <a href="pag2.html" id="mostra-tela-cadastro" target="_parent">Crie uma</a>
+            <div class="switch" >
+                
+                <p>Ainda não tem uma conta?</p><a href="pag2.html" id="mostra-tela-cadastro" target="_parent"">Crie uma</a>
             </div>
         </div>
         
     </div>
-    
+    <script src="scriptlogin.js"></script>
 </body>
 </html>
