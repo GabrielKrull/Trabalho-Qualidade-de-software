@@ -18,7 +18,7 @@ body {
 
 #cadastro {
     background-color: #ffffff;
-    padding: 30px;
+    padding: 60px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
     border: 3px solid #3f47ff;
@@ -39,10 +39,19 @@ label {
     font-weight: bold;
 }
 
+.aviso{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 10px;
+}
+
 input {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid darkblue;
     border-radius: 5px;
 }
@@ -51,6 +60,36 @@ input:focus {
     border-color: #2575fc;
     outline: none;
 }
+
+.senha-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.senha-wrapper input {
+  width: 100%;
+  padding: 8px;
+  padding-right: 35px; /* espa�o pro olho */
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.toggle-senha {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-15%); /* centraliza certinho no meio */
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  color: #333;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+
 
 button {
     width: 50%;

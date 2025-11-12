@@ -16,6 +16,17 @@ document.getElementById("botao-cadastro").addEventListener("click", () => {
     if(senha.value.length < 6) senhaErr.textContent = "A senha deve ter pelo menos 6 caracteres.";
     if(senha.value !== confirm.value) confirmErr.textContent = "As senhas não coincidem.";
 
-    if(!nomeErr.textContent && !emailErr.textContent && !passErr.textContent && !confirmErr.textContent)
+    if(!nomeErr.textContent && !emailErr.textContent && !senhaErr.textContent && !confirmErr.textContent)
         alert("Cadastro realizado com sucesso!");
+
+    
 });
+
+function toggleSenha() {
+  const input = document.getElementById("cadastro-senha");
+  if (input.type === "password") {
+    input.type = "text";
+  } else {
+    input.type = "password";
+  }
+}

@@ -19,13 +19,19 @@
         <div id="cadastro-email-erro" class="erro"></div>
 
 
-        <label for="cadastro-senha">Senha:</label>
-        <input type="password" id="cadastro-senha" placeholder="Digite sua senha:" >
-        <div id="cadastro-senha-erro" class="erro"></div>
+        <div class="senha-wrapper">
+            <label for="cadastro-senha">Senha:</label>
+                <input type="password" id="cadastro-senha" placeholder="Digite sua senha:">
+            <span class="toggle-senha" onclick="toggleSenha()">👁️</span>
+            <div id="cadastro-senha-erro" class="erro"></div>
+        </div>
 
-        <label for="cadastro-confirmar-senha">Confirmar senha:</label>
-        <input type="password" id="cadastro-confirmar-senha" placeholder="Digite sua senha novamente:">
-        <div id="cadastro-confirmar-senha-erro" class="erro"></div>
+        <div class="senha-wrapper">
+            <label for="cadastro-confirmar-senha">Confirmar senha:</label>
+            <input type="password" id="cadastro-confirmar-senha" placeholder="Digite sua senha novamente:">
+            <span class="toggle-senha" onclick="toggleSenha()">👁️</span>
+            <div id="cadastro-confirmar-senha-erro" class="erro"></div>
+        </div>
 
         <button id="botao-cadastro">Cadastrar</button>
 
