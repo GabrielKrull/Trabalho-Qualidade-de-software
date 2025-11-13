@@ -30,3 +30,12 @@ function toggleSenha() {
     input.type = "password";
   }
 }
+
+function toggleConfirmarSenha() {
+  const input = document.getElementById("cadastro-confirmar-senha");
+  if (input.type === "password") {
+    input.type = "text";
+  } else {
+    input.type = "password";
+  }
+}

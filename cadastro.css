@@ -61,6 +61,10 @@ input:focus {
     outline: none;
 }
 
+.erro{
+    font-size: 14px;
+}
+
 .senha-wrapper {
   position: relative;
   width: 100%;
@@ -76,6 +80,20 @@ input:focus {
 }
 
 .toggle-senha {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-15%); /* centraliza certinho no meio */
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  color: #333;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.toggle-confirmar-senha {
   position: absolute;
   top: 50%;
   right: -30px;
