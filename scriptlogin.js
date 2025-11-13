@@ -10,7 +10,7 @@
         if (!email.value && !senha.value) emailErr.textContent = senhaErr.textContent = "Este campo não pode ficar vazio."
 
 
-        if(!emailErr.textContent && !passErr.textContent)
+        if(!emailErr.textContent && !senhaErr.textContent)
             alert("Login bem-sucedido!");
     });
 
